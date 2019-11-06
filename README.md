@@ -15,16 +15,17 @@ $ npm install express-session
 $ npm install mongodb
 $ npm install mongoose
 ````
-Running the tests
+## Running the tests
 Using Postman:
-**List all drivers** using http://localhost:3000/localz/drivers and a GET request. 
 
-**Search driver by name** using http://localhost:3000/localz/name?Name=insertnamehere
-in a GET request. 
+1. **List all drivers** using http://localhost:3000/localz/drivers and a GET request. 
 
-**Search driver by ID** using a query with the key Id using http://localhost:3000/localz/id?Id=insertidhere in a GET request.
+2. **Search driver by name** using http://localhost:3000/localz/name?Name=insertnamehere
+in a GET request with 'Name' as the key.
 
-To **register a driver**, go to http://localhost:3000/localz/register and use a POST request. Enter a username, password, firstname, and lastname in the body raw, using JSON. 
+3. **Search driver by ID** using a query with the key 'Id' using http://localhost:3000/localz/id?Id=insertidhere in a GET request.
+
+4. To **register a driver**, go to http://localhost:3000/localz/register and use a POST request. Enter a username, password, firstname, and lastname in the body raw, using JSON. 
 ``
 {
  "username" : "bob",
@@ -34,7 +35,7 @@ To **register a driver**, go to http://localhost:3000/localz/register and use a 
  }
 ``    
 
-To **login**, go to http://localhost:3000/localz/login and use a POST request. Enter a  username and password into the body using raw and JSON. 
+5. To **login**, go to http://localhost:3000/localz/login and use a POST request. Enter a  username and password into the body using raw and JSON. 
  ````
 {
  "username" : "bob",
@@ -42,11 +43,7 @@ To **login**, go to http://localhost:3000/localz/login and use a POST request. E
 }
 ````
 
-**Access the dashboard** by http://localhost:3000/localz/dashboard using a GET request. Only accessable if logged in. 
+6. **Access the dashboard** by http://localhost:3000/localz/dashboard using a GET request. Only accessible if logged in. 
 
-**Logout** using http://localhost:3000/localz/logout in a GET request. Only successful if previously logged in. 
+7. **Logout** using http://localhost:3000/localz/logout in a GET request. Only successful if previously logged in. 
 
-
-
-Authors 
-* Areej Ali Ahmed
